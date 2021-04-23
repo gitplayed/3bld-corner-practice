@@ -88,10 +88,10 @@ namespace this_one
 
 
             filename = "algtimes";
-            location = "C:\\Users\\jacobchmielecki\\Desktop";
-          //  string docPath =
-          //Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-          //  location = docPath;
+            
+          string docPath =
+          Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+          location = docPath;
 
             adddate = true;
             buffer = "C";
@@ -103,10 +103,9 @@ namespace this_one
             }
             else
             {
-               letterscheme = new string[] {"A", "B", "C", "D", "E", "F", "G",
-                                          "H", "I", "J", "K", "L", "M", "N",
-                                            "O", "P", "Q", "R", "S", "T", "U",
-                                              "V", "W", "X"};
+               letterscheme = new string[] {"A", "B", "C", "D", "I", "J", "K", "L", "M", "N",
+                                            "O", "P", "Q", "R", "S", "T", "E", "F", "G",
+                                            "H", "U", "V", "W", "X"};
             }
 
             buffer = this_one.Properties.Settings.Default.settingbuffer;
