@@ -1699,6 +1699,7 @@ namespace this_one
             panel1.Visible = false;
 
             this_one.Properties.Settings.Default.Save();
+            algs = createlist();
             listening = true;
             //Refresh();
             
