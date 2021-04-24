@@ -1776,6 +1776,20 @@ namespace this_one
             panel1.Visible = false;
             listening = true;
             savecubeorientation();
+            drill = new bool[21, 18];
+                char[] tsandfs= this_one.Properties.Settings.Default.settingalgs.ToCharArray();
+                int x = 0;
+                for(int i = 0; i < 21; i++)
+                    for(int j = 0; j < 18; j++)
+                    {
+                        if (tsandfs[x] == 't')
+                            drill[i, j] = true;
+                        else
+                            drill[i, j] = false;
+                        x++;
+
+                    }
+
         }
 
         void Click55(Object sender, EventArgs e)
